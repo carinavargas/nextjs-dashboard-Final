@@ -1,5 +1,4 @@
-import AcmeLogo from '@/app/ui/acme-logo';
-
+import { Metadata } from 'next';
 import SideNav from '@/app/ui/dashboard/sidenav';
 
 export const experimental_ppr = true; 

@@ -1,4 +1,3 @@
-import AcmeLogo from '@/app/ui/acme-logo';
 import { Metadata } from 'next';
 
 import Pagination from '@/app/ui/invoices/pagination';

@@ -60,12 +60,13 @@ const FormSchema = z.object({
         INSERT INTO invoices (customer_id, amount, status, date)
         VALUES (${customerId}, ${amountInCents}, ${status}, ${date})
       `;
-    } catch (error) {
-      // We'll log the error to the console for now
-      return {
-        message: 'Database Error: Failed to Create Invoice.',
-      };
-    }
+      } catch (error) {
+    // We'll log the error to the console for now
+    console.error('Database Error:', error);
+    return {
+      message: 'Database Error: Failed to Create Invoice.',
+    };
+  }
   
   
    
