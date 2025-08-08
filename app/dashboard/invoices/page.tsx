@@ -1,4 +1,5 @@
 import AcmeLogo from '@/app/ui/acme-logo';
+import { Metadata } from 'next';
 
 import Pagination from '@/app/ui/invoices/pagination';
 import Search from '@/app/ui/search';
@@ -9,10 +10,8 @@ import { Suspense } from 'react';
 import { InvoicesTableSkeleton } from '@/app/ui/skeletons';
 import { fetchInvoicesPages } from '@/app/lib/data';
 
-import { Metadata } from 'next';
- 
 export const metadata: Metadata = {
-  title: 'Invoices | Acme Dashboard',
+  title: 'Invoices',
 };
  
 export default async function Page(props: {
